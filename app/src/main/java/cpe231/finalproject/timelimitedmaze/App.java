@@ -15,9 +15,9 @@ public final class App {
     Maze maze = MazeStore.getMaze("m15_15.txt");
     System.out.println(maze);
 
-    MazeSolver solver = new LeftWallFollowerSolver();
+    MazeSolver leftWallFollowerSolver = new LeftWallFollowerSolver();
     try {
-      SolverResult result = solver.solve(maze);
+      SolverResult result = leftWallFollowerSolver.solve(maze);
       System.out.printf("Path length: %d%n", result.path().size());
       System.out.printf("Total cost: %d%n", result.totalCost());
       result.path().forEach(System.out::println);
