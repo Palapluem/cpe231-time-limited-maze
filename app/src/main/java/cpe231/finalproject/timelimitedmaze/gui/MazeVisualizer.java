@@ -249,7 +249,6 @@ public final class MazeVisualizer {
       float scale = Math.min(scaleX, scaleY);
 
       int imageWidth = (int) (textureWidth * scale);
-      int imageHeight = (int) (textureHeight * scale);
       int imageX = panelX + (STATS_PANEL_WIDTH - imageWidth) / 2;
 
       Raylib.Vector2 position = Helpers.newVector2(imageX, currentY);
